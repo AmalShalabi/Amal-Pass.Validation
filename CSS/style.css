@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    background-image: radial-gradient(circle at 44% 9%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 74%,transparent 74%, transparent 83%,transparent 83%, transparent 100%),radial-gradient(circle at 0% 23%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 8%,transparent 8%, transparent 69%,transparent 69%, transparent 100%),radial-gradient(circle at 87% 35%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 10%,transparent 10%, transparent 61%,transparent 61%, transparent 100%),radial-gradient(circle at 22% 7%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 16%,transparent 16%, transparent 88%,transparent 88%, transparent 100%),radial-gradient(circle at 37% 26%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 7%,transparent 7%, transparent 9%,transparent 9%, transparent 100%),radial-gradient(circle at 86% 59%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 77%,transparent 77%, transparent 95%,transparent 95%, transparent 100%),radial-gradient(circle at 75% 83%, hsla(153,0%,47%,0.05) 0%, hsla(153,0%,47%,0.05) 35%,transparent 35%, transparent 86%,transparent 86%, transparent 100%),linear-gradient(0deg, hsl(279,0%,100%),hsl(279,0%,100%));
+}
+
+.container {
+    position: relative;
+}
+
+.input_wrapper {
+    position: relative;
+    margin-top: 4em;
+}
+
+h1 {
+    position: absolute;
+    background-color: cornflowerblue;
+    border-radius: 0.5em;
+    color: white;
+    padding: 0.3em;
+    margin-left: 110px;
+    top: 30px;
+    animation-name: header;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-weight: lighter;
+
+}
+
+@keyframes header {
+    from {
+        border: white dashed 3px;
+    }
+
+    to {
+        border: white dotted 3px;
+    }
+}
+
+input {
+    border: none;
+    border-bottom: solid black 1px;
+    width: 100%;
+    font-size: 1em;
+    padding: 1em;
+    background-color: rgb(255, 255, 231) ;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+.hide-show {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 1.1em;
+    color:crimson ;
+    font-weight: bolder;
+
+}
+
+.info {
+    margin-top: 2em;
+    color: rgb(10, 4, 68);
+    font-size: 1.3em;
+}
+h5{
+    font-family: 'Roboto',sans-serif;
+    font-size: 0.8em;
+}
+
+h5 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4em;
+    position: relative;
+    z-index: 1;
+}
+
+h5 span::after {
+    content: '';
+    position: absolute;
+    width: 12.5em;
+    height: .28em;
+    background-color: rgb(231, 95, 117);
+    margin-left: -12.5em;
+    z-index: -1;
+    bottom: 0;
+}
+
+b {
+    color: crimson;
+    
+}
+
+.item {
+    display: flex;
+    margin-top: 0.6em;
+}
+
+.item__active b {
+    color: cornflowerblue;
+}
+
+.item__active {
+    color: cornflowerblue;
+}
+
+.button {
+    position: absolute;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: larger;
+    border-radius: 0.6em;
+    padding: 0.5em 0.4em;
+    margin-top: 1.5em;
+    right: 380px;
+    bottom: 10px;
+}
+
+.button:hover {
+    background-color: crimson;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: larger;
+}

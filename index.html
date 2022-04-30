@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Password Validation</title>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="h11"><h1>Creat Your Password</h1></div>
+        <div class="input_wrapper">
+            <input id="password" type="password">
+            <div class="hide-show">Show</div>
+        </div>
+
+        <div class="info">
+            <h5><span>Password Must Contain The Following:</span></h5><br><br>
+            <div class="item char_8">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>At Least <b>8 Characters</b></p>
+            </div>
+
+            <div class="item Eng_char">
+                <i class="ri-checkbox-circle-fill"></i>  
+                <p>All Are <b> English Characters </b></p>
+            </div>
+
+            <div class="item Uappercase">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>At Least  <b> 1 Capital (Uppercase)</b> Letter</p>
+            </div>
+
+            <div class="item Lowercase">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>At Least <b> 1 Lowercase</b> letter</p>
+            </div>
+
+           
+            <div class="item Symbol">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>At Least <b> 1 Symbol</b></p>
+            </div>
+
+            <div class="item threeNumbers">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>No<b> Sequential Numerical</b> Characters</p>
+            </div>
+
+        </div>
+
+        <div class="button">Check</div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
